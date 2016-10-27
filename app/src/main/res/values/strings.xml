@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SIP</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="txt_titulo">Sistema Integral de Prestamos</string>
+    <string name="txt_nombre">Ingresa Usuario</string>
+    <string name="txt_password">Ingresa Password</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="txt_sucursal_subtitulo">Sucursales Activas</string>
 </resources>

@@ -9,24 +9,27 @@ import com.j256.ormlite.table.DatabaseTable;
 @DatabaseTable
 public class Usuario {
     public static final String ID = "_id";
-    public static final String NOMBRE = "nombre";
+    public static final String ID_ASESOR = "id_asesor";
     public static final String USUARIO = "usuario";
     public static final String PASSWORD = "password";
-    public static final String EMAIL = "email";
-    public static final String ESTATUS = "estatus";
+    public static final String ADMINISTRADOR = "administrador";
+    public static final String ACTIVO = "activo";
+    public static final String FECHA_EXPIRACION = "fecha_expiracion";
 
     @DatabaseField(generatedId = true, columnName = ID)
     private int id;
-    @DatabaseField(columnName = NOMBRE)
-    private String nombre;
+    @DatabaseField(columnName = ID_ASESOR)
+    private int id_asesor;
     @DatabaseField(columnName = USUARIO)
     private String usuario;
     @DatabaseField(columnName = PASSWORD)
     private String password;
-    @DatabaseField(columnName = EMAIL)
-    private String email;
-    @DatabaseField(columnName = ESTATUS)
-    private int estatus;
+    @DatabaseField(columnName = ADMINISTRADOR)
+    private int administrador;
+    @DatabaseField(columnName = ACTIVO)
+    private int activo;
+    @DatabaseField(columnName = FECHA_EXPIRACION)
+    private String fecha_expiracion;
 
     public int getId() {
         return id;
@@ -36,28 +39,12 @@ public class Usuario {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public int getId_asesor() {
+        return id_asesor;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setId_asesor(int id_asesor) {
+        this.id_asesor = id_asesor;
     }
 
     public String getUsuario() {
@@ -68,11 +55,33 @@ public class Usuario {
         this.usuario = usuario;
     }
 
-    public int getEstatus() {
-        return estatus;
+    public String getPassword() {
+        return password;
     }
 
-    public void setEstatus(int estatus) {
-        this.estatus = estatus;
+    public void setPassword(String password) {
+        this.password = password;
     }
+
+    public int getAdministrador() {
+        return administrador;
+    }
+
+    public void setAdministrador(int administrador) {
+        this.administrador = administrador;
+    }
+
+    public int getActivo() {
+        return activo;
+    }
+
+    public void setActivo(int activo) {
+        this.activo = activo;
+    }
+
+    public String getFecha_expiracion() { return fecha_expiracion; }
+
+    public void setFecha_expiracion(String fecha_expiracion) { this.fecha_expiracion = fecha_expiracion; }
+
+
 }

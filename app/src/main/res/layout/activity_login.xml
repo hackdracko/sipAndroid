@@ -18,7 +18,7 @@
         android:id="@+id/txtTitulo"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:layout_marginTop="39dp" />
 
     <EditText
@@ -51,18 +51,22 @@
         android:layout_marginTop="85dp"
         android:layout_below="@+id/txtPassword"
         android:textAllCaps="false"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:layout_centerHorizontal="true" />
 
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        app:fabSize="mini"
-        app:srcCompat="@android:drawable/ic_menu_info_details"
-        android:layout_below="@+id/btnIngresar"
-        android:layout_toEndOf="@+id/txtPassword"
+        app:srcCompat="@android:drawable/ic_menu_rotate"
         android:layout_marginTop="14dp"
         android:id="@+id/floatingUpdateButton"
-        app:backgroundTint="@android:color/holo_blue_bright" />
+        android:visibility="gone"
+        app:fabSize="mini"
+        app:elevation="11dp"
+        app:rippleColor="@android:color/holo_red_light"
+        app:backgroundTint="?attr/actionModeSplitBackground"
+        android:layout_below="@+id/btnIngresar"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
